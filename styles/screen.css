@@ -1,0 +1,248 @@
+/* =====================================================================
+// <NAME OF CLIENT/PROJECT>
+// Created <MONTH> 2010 - KJR | WAA Ltd.
+// Main screen styles
+===================================================================== */
+
+/*  Style sheet glossary
+// ---------------------------------------------------------------------
+
+--- Colours ---
+
+
+--- Fonts ---
+
+
+--- Index ---
+=Globals
+=Typography
+=Quotations
+=Structural
+	~Masthead
+	~Content
+	~Footer
+
+For Internet Explorer specific styles, see ie.css
+
+Please keep this style sheet tidy, note closing brace position, and write
+properties in order they affect objects in the DOM.
+
+// -------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------
+// =Globals
+--------------------------------------------------------------------- */
+
+body {
+	font: normal .75em/1.5 sans-serif;
+	}
+	
+/* Resets
+--------------------------------------------------------------------- */
+	
+* {margin: 0; border: none; padding: 0;}
+hr {display: none;}
+acronym, abbr {border-bottom: 1px dotted; cursor: help;}
+ul, ol {list-style: none;}
+dfn {font-style: normal; cursor: help;}
+	
+/* Cleafixes
+--------------------------------------------------------------------- */
+	
+.clearfix:after,
+header#masthead:after,
+header#masthead nav ul:after,
+section#content:after,
+section#content section:after,
+div#page > footer:after {display: block; clear: both; height: 0; content: "\2003";}
+	
+/* Links
+--------------------------------------------------------------------- */
+	
+a:link,
+a:visited {
+	font-weight: normal;
+	text-decoration: underline;
+	color: blue;
+	}
+	
+a:hover,
+a:focus,
+a:active {
+	color: red;
+	text-decoration: none;
+	}
+	
+/* General styles
+--------------------------------------------------------------------- */
+	
+.clear {clear: both;}
+.hide-1 {display: none;} /* For legends and any element you want to hide on the page - doesn't work with table cells and not good if you need screenreaders to read the content */
+.hide-2 {position: absolute; left: -1000em;} /* To remove elements off-screen and remove their effect on other elements in the document - doesn't work with table cells */
+.hide-3 {text-indent: -1000em;} /* To hide text in a table cell - still read by screen readers */
+.hide-4 {visibility: hidden;} /* To hide an element and its contents but still hold its structure on the page */
+.hide-5 {visibility: hidden; text-indent: -1000em;} /* To hide an element and its contents but still have its structure have a partial effect on its surrounding elements */
+
+.centre {text-align: center;}
+.float-right {float: right;}
+.float-left {float: left;}
+	
+/* General images */
+.image-left {float: left;}
+.image-right {float: right;}
+
+/* ---------------------------------------------------------------------	
+// =Typography
+--------------------------------------------------------------------- */
+	
+/* headings
+--------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {font: normal 1em/1.5 sans-serif;}
+h1 {font-size: 2em; line-height: 1.333; margin: 0 0 .917em;} /* 24px */
+h2 {font-size: 1.5em; line-height: 1.333; margin: 1em 0 .667em;} /* 18px */
+h3 {margin: 1em 0;}
+
+/* ---------------------------------------------------------------------
+// =Quotations
+--------------------------------------------------------------------- */
+	
+/* Standard quotes
+--------------------------------------------------------------------- */
+	
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+	
+/* Safari support */
+q:before   { content: '\201C'; }
+q:after    { content: '\201D'; }
+q q:before { content: '\2018'; }
+q q:after  { content: '\2019'; }
+	
+/* Blockquotes
+--------------------------------------------------------------------- */
+	
+blockquote * { quotes: none; }
+blockquote > *:before { content: '\201C'; }
+blockquote > *:after  { content: '\201D'; }
+blockquote q:before   { content: '\2018'; }
+blockquote q:after    { content: '\2019'; }
+	
+/* ---------------------------------------------------------------------
+// =Structural
+--------------------------------------------------------------------- */
+
+/* Defines the page container, DIV used as this element holds no semantic value */
+div#page {
+	margin: 0 auto;
+	width: 960px;
+	}
+
+/* Defines time and date information */
+span.time {
+	
+	}
+
+/* ~Masthead
+--------------------------------------------------------------------- */
+
+header#masthead {
+	
+	}
+	
+section#identity {
+	
+	}
+	
+/* Main navigation
+--------------------------------------------------------------------- */
+
+header#masthead nav {
+	
+	}
+	
+header#masthead nav ul {
+	
+	}
+	
+header#masthead nav li {
+	
+	}
+	
+header#masthead nav a:link,
+header#masthead nav a:visited {
+	
+	}
+	
+header#masthead nav a:hover,
+header#masthead nav a:focus,
+header#masthead nav a:active {
+	
+	}
+
+/* Currently selected text */ 	
+header#masthead nav a:link.selected,
+header#masthead nav a:visited.selected {
+	
+	}
+	
+header#masthead nav a:hover.selected,
+header#masthead nav a:focus.selected,
+header#masthead nav a:visited.selected {
+	
+	}
+
+/* ~Content
+--------------------------------------------------------------------- */
+
+section#content {
+	
+	}
+	
+/* Defines navigational structures, not groups of links */
+section#content nav {
+	
+	}
+	
+/* Defines the header of a section or article */
+section#content header {
+	
+	}
+	
+/* Defines information in summary of a section or article */
+section#content summary {
+	
+	}
+	
+/* Defines a section of content */
+section#content section {
+	
+	}
+	
+/* Defines content that can exist outside of this website, eg. blog posts */
+section#content article {
+	
+	}
+
+/* Defines details pertaining to a section or article */
+section#content details {
+	
+	}
+	
+/* Defines footnotes and/or meta data pertaining to a section or article */
+section#content footer {
+	
+	}
+	
+/* Defines information that is in support of a section or article */
+section#content aside {
+	
+	}
+
+/* ~Footer
+--------------------------------------------------------------------- */
+
+div#page > footer {
+	
+	}
